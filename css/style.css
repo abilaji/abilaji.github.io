@@ -1,0 +1,108 @@
+body{
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+}
+.nav-link{
+    color: white !important;
+    font-size: 18px;  
+    padding-left: 2rem !important;
+    text-transform: capitalize;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+/* home page */
+.content h1{ 
+    font-size: 46px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    line-height: 4rem;
+    word-spacing: 5px;
+    padding: 4.5rem 0 3rem 0;
+    color: white;
+}
+.content span{
+    color: #D8CF5A;
+}
+
+.iconSosmed button{
+    font-size: 16px;
+    border: none 3px solid;
+    width: 120px;
+    line-height: 19px;
+    background-color:  #D8CF5A;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+}
+.iconSosmed .icon {
+    padding-left: 3rem;
+    word-spacing: 2rem;
+}
+
+/* about me */
+.about {
+    color: #ffffff;
+}
+.about h2 {
+    font-weight: bold;
+}
+.about span{
+    color: #D8CF5A;
+}
+.about p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 35px;
+    font-size: 16px;
+    color: #a7a7a7;
+}
+
+/* work */
+.thumbnail {
+    margin: 50px auto;
+}
+h2.text-center{
+    color: #ffffff;
+    font-weight: bold;
+    margin: 2rem 0 3rem 0;
+    text-transform: capitalize;
+}
+
+/* skill */
+.skill{
+    width: 100%;
+    height: 298px;
+    background: linear-gradient(272.7deg, #484848 -2.47%, rgba(138, 138, 138, 0.227726) 89.66%, rgba(196, 196, 196, 0) 110.67%);
+}
+.skill .text-center{
+    padding-top: 2.5rem;
+}
+.skill .tools img{
+    margin: 0 100px 0 0;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    background: #0e0e0e;
+    margin-top: 5rem;
+}
+
+.row .col-4 .pl-5 h3{
+    color: #ffffff;
+}
+
+footer .bubble{
+    position: relative;
+    margin-left: 2.5rem;
+    z-index: 1;
+}
+footer .content h3,p{
+    color: #ffffff;
+}
+
+footer .content{
+    padding-top: 3rem;
+}

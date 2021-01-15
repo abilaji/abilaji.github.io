@@ -2,11 +2,20 @@ body{
     background-color: black;
     font-family: 'Kanit', sans-serif;
 }
+
+/* versi mobile */
 .nav-link{
     color: white !important;
     font-size: 18px;  
     padding-left: 2rem !important;
     text-transform: capitalize;
+}
+img.navbar-brand {
+   width: 14rem;
+   margin: 0px;
+}
+.fa-list{
+    color: white;
 }
 
 h3 {
@@ -15,12 +24,12 @@ h3 {
 }
 /* home page */
 .content h1{ 
-    font-size: 46px;
+    font-size: 32px;
     font-weight: bolder;
     text-transform: capitalize;
-    line-height: 4rem;
-    word-spacing: 5px;
-    padding: 4.5rem 0 3rem 0;
+    line-height: 2.5rem;
+    word-spacing: 2px;
+    padding: 2rem 0 3rem 0;
     color: white;
 }
 .content span{
@@ -28,9 +37,10 @@ h3 {
 }
 
 .iconSosmed button{
-    font-size: 16px;
+    font-size: 12px;
     border: none 3px solid;
-    width: 120px;
+    width: 100px;
+    height: 34px;
     line-height: 19px;
     background-color:  #D8CF5A;
     text-transform: capitalize;
@@ -38,8 +48,12 @@ h3 {
     
 }
 .iconSosmed .icon {
-    padding-left: 3rem;
-    word-spacing: 2rem;
+    padding-left: 30px;
+    word-spacing: 10px;
+}
+
+img.foto{
+    display: none !important;
 }
 
 /* about me */
@@ -59,6 +73,23 @@ h3 {
     color: #a7a7a7;
 }
 
+.imgAbout img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  padding-right: 0;
+  width: 100px; 
+
+}
+.about .row{
+    display: block;
+    margin: 0;
+    justify-content: center;
+}
+.pb-2 {
+    font-size: 16px;
+}
+
 /* work */
 .thumbnail {
     margin: 50px auto;
@@ -69,8 +100,35 @@ h2.text-center{
     margin: 2rem 0 3rem 0;
     text-transform: capitalize;
 }
+img.gambarWork{
+    width: 280px !important;
+}
+img.gb1, .gb2, .gb3, .gb4, .gb5{
+    margin-bottom: 0rem;
+    padding-bottom: 1rem;
+}
 
 /* skill */
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  
+}
+.px-5, .pl-5{
+    padding: 20px !important;
+    padding-top: 1rem !important;
+}
+img.figma,.rounded-circle{
+    margin-right: 10px !important;
+
+}
+.tools img{
+    width: 50px;
+}
+
 .skill{
     width: 100%;
     height: 298px;
@@ -80,12 +138,27 @@ h2.text-center{
     padding-top: 2.5rem;
 }
 .skill .tools img{
-    margin: 0 100px 0 0;
+    margin: 0;
+}
+.mid .row{
+    display: block;
+    font-size: 12px;
+    box-sizing: border-box ;
+}
+
+.row .col-4{
+    max-width: 100%;
+}
+.mid .row h3{
+    margin-top: 10px 0 2px 0;
+}
+.mid .row .col-8{
+    max-width: 100%;
 }
 .footer{
     position: absolute;
     width: 100%;
-    height: 280px;
+    height: 160px;
     background: #0e0e0e;
     margin-top: 5rem;
 }
@@ -94,15 +167,113 @@ h2.text-center{
     color: #ffffff;
 }
 
-footer .bubble{
-    position: relative;
-    margin-left: 2.5rem;
-    z-index: 1;
+/* footer */
+
+footer .contents h3{
+   font-size: 16px;
+   color: #ffffff;
 }
-footer .content h3,p{
+footer .contents p{
+    font-size: 12px;
     color: #ffffff;
 }
 
-footer .content{
-    padding-top: 3rem;
+footer .contents {
+    padding-top: 20px;
+}
+
+.bubble{
+display: none;
+}
+
+
+/* versi desktop */
+@media (min-width: 992px){
+    img.navbar-brand{
+        width: 420px;
+    }
+
+    .content h1{
+    font-size: 42px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    line-height: 4rem;
+    word-spacing: 5px;
+    padding: 4.5rem 0 3rem 0;
+    }
+    img.foto{
+        display: flex !important;
+    }
+    img.gb1, .gb2, .gb3, .gb4, .gb5{
+        margin: 1rem;
+        width: 340px !important;
+    }
+    .tools img{
+        width: 100px;
+    }
+    
+
+    .imgAbout img{
+        padding-right: 1rem;
+        margin-left: 7rem;
+        width: 300px;
+      }
+
+      .about .row{
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .iconSosmed button{
+        font-size: 16px;
+        width: 120px;
+    }
+
+    .iconSosmed .icon {
+        padding-left: 3rem;
+        word-spacing: 2rem;
+    }
+
+    /* skills */
+    .tools{
+        justify-content: space-between;
+    }
+
+
+    .bubble{
+        display: block;
+        position: relative;
+        margin-left: 2.5rem;
+        width: 36rem;
+        margin-top: 20px;
+        z-index: 1;
+    }
+
+    /* footer */
+    .footer{
+        width: 100%;
+        height: 280px;
+        margin-top: 5rem;
+    }
+    footer .contents h3{
+        color: #ffffff;
+        margin-top: 1rem;
+        font-size: 24px;
+    }
+    .contents p{
+        font-size: 12px;
+    }
+
+    .mid .row{
+        display: flex;
+
+    }
+    footer .contents{
+        padding-top: 5rem;
+    }
+
+    .pb-2 {
+        font-size: 24px;
+    }
 }
